@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61AF429D2A8FBCBD00CDB495 /* AddEditFirestoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AF429C2A8FBCBD00CDB495 /* AddEditFirestoreViewController.swift */; };
+		61AF429F2A8FBCCB00CDB495 /* FirestoreCRUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AF429E2A8FBCCB00CDB495 /* FirestoreCRUDViewController.swift */; };
+		61AF42A12A8FBCDB00CDB495 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AF42A02A8FBCDB00CDB495 /* MovieTableViewCell.swift */; };
+		61AF42A32A8FBD5F00CDB495 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AF42A22A8FBD5F00CDB495 /* Building.swift */; };
 		61D487732A8F2FC600DF7C3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D487722A8F2FC600DF7C3F /* AppDelegate.swift */; };
 		61D487752A8F2FC600DF7C3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D487742A8F2FC600DF7C3F /* SceneDelegate.swift */; };
 		61D4877A2A8F2FC600DF7C3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D487782A8F2FC600DF7C3F /* Main.storyboard */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61AF429C2A8FBCBD00CDB495 /* AddEditFirestoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditFirestoreViewController.swift; sourceTree = "<group>"; };
+		61AF429E2A8FBCCB00CDB495 /* FirestoreCRUDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirestoreCRUDViewController.swift; sourceTree = "<group>"; };
+		61AF42A02A8FBCDB00CDB495 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		61AF42A22A8FBD5F00CDB495 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 		61D4876F2A8F2FC600DF7C3F /* MDEV1001-M2023-FinalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MDEV1001-M2023-FinalTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D487722A8F2FC600DF7C3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61D487742A8F2FC600DF7C3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +80,9 @@
 			children = (
 				61D487862A8F328900DF7C3F /* GoogleService-Info.plist */,
 				61D487722A8F2FC600DF7C3F /* AppDelegate.swift */,
+				61AF42A02A8FBCDB00CDB495 /* MovieTableViewCell.swift */,
+				61AF429C2A8FBCBD00CDB495 /* AddEditFirestoreViewController.swift */,
+				61AF429E2A8FBCCB00CDB495 /* FirestoreCRUDViewController.swift */,
 				61D487932A8F3AE500DF7C3F /* FirebaseLoginViewController.swift */,
 				61D487952A8F3DAE00DF7C3F /* FirebaseRegisterViewController.swift */,
 				61D487742A8F2FC600DF7C3F /* SceneDelegate.swift */,
@@ -79,6 +90,7 @@
 				61D4877B2A8F2FC800DF7C3F /* Assets.xcassets */,
 				61D4877D2A8F2FC800DF7C3F /* LaunchScreen.storyboard */,
 				61D487802A8F2FC800DF7C3F /* Info.plist */,
+				61AF42A22A8FBD5F00CDB495 /* Building.swift */,
 			);
 			path = "MDEV1001-M2023-FinalTest";
 			sourceTree = "<group>";
@@ -165,10 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61AF429D2A8FBCBD00CDB495 /* AddEditFirestoreViewController.swift in Sources */,
 				61D487962A8F3DAE00DF7C3F /* FirebaseRegisterViewController.swift in Sources */,
+				61AF42A12A8FBCDB00CDB495 /* MovieTableViewCell.swift in Sources */,
 				61D487732A8F2FC600DF7C3F /* AppDelegate.swift in Sources */,
 				61D487752A8F2FC600DF7C3F /* SceneDelegate.swift in Sources */,
+				61AF429F2A8FBCCB00CDB495 /* FirestoreCRUDViewController.swift in Sources */,
 				61D487942A8F3AE500DF7C3F /* FirebaseLoginViewController.swift in Sources */,
+				61AF42A32A8FBD5F00CDB495 /* Building.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
