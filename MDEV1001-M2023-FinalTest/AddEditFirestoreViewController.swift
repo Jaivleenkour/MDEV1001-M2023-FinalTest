@@ -62,6 +62,8 @@ class AddEditFirestoreViewController: UIViewController {
             //self.posterImageLabel.isHidden = true
             self.buildingImage.isHidden = true
         }
+        self.descriptionTextView.layer.borderColor = UIColor.lightGray.cgColor
+        self.descriptionTextView.layer.borderWidth = 1
     }
     
     @IBAction func CancelButton_Pressed(_ sender: UIButton) {
@@ -72,7 +74,8 @@ class AddEditFirestoreViewController: UIViewController {
         guard
               let name = nameTextField.text,
               let type = typeTextField.text,
-              let dateBuilt = dateBuiltTextField.text,
+              let dateBuiltString = dateBuiltTextField.text,
+              let dateBuilt = Int(dateBuiltString),
               let city = cityTextField.text,
               let country = countryTextField.text,
               let architects = architectsTextField.text,

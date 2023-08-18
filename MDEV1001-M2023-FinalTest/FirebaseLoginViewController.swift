@@ -94,7 +94,7 @@ class FirebaseLoginViewController: UIViewController, UITextFieldDelegate {
                     }
                 } else {
                     print("Username not found.")
-                    self.displayErrorMessage(message: "Authentication Failed")
+                    self.displayErrorMessage(message: "Invalid Credentials")
                 }
             }
         }

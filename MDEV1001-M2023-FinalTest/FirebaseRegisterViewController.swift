@@ -12,8 +12,33 @@ class FirebaseRegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        passwordTextField.textContentType = .newPassword
+        confirmPasswordTextField.textContentType = .password
+        
+        // Add show password button
+        let showPasswordButton = UIButton(type: .custom)
+        showPasswordButton.setImage(UIImage(systemName: "eye"), for: .normal)
+        showPasswordButton.tintColor = .systemBlue // Set initial color to green
+        showPasswordButton.frame = CGRect(x: 0, y: 0, width: 40, height: 20)
+        showPasswordButton.contentHorizontalAlignment = .left // Align the image to the left
+        showPasswordButton.addTarget(self, action: #selector(togglePasswordVisibility), for: .touchUpInside)
+
+        // Create a container view for padding
+        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 20)) // Width without padding
+        containerView.addSubview(showPasswordButton)
+        passwordTextField.rightView = containerView
+        passwordTextField.rightViewMode = .always
     }
 
+    @objc func togglePasswordVisibility()
+    {
+        passwordTextField.isSecureTextEntry.toggle()
+        if let containerView = passwordTextField.rightView,
+           let showPasswordButton = containerView.subviews.first as? UIButton {
+            showPasswordButton.tintColor = passwordTextField.isSecureTextEntry ? .systemBlue : .systemRed
+        }
+    }
+    
     @IBAction func registerButton_Pressed(_ sender: UIButton) {
         guard let username = usernameTextField.text,
               let email = emailTextField.text,

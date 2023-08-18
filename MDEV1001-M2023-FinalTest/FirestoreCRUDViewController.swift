@@ -31,7 +31,7 @@ class FirestoreCRUDViewController: UIViewController, UITableViewDelegate, UITabl
                     building.documentID = document.documentID // Set the documentID
                     fetchedBuildings.append(building)
                 } catch {
-                    print("Error decoding movie data: \(error)")
+                    print("Error decoding building data: \(error)")
                 }
             }
 
@@ -50,10 +50,28 @@ class FirestoreCRUDViewController: UIViewController, UITableViewDelegate, UITabl
         let cell = tableView.dequeueReusableCell(withIdentifier: "BuildingCell", for: indexPath) as! MovieTableViewCell
 
         let building = buildings[indexPath.row]
-
         cell.nameLabel?.text = building.name
-        cell.country_datebuilt_Label?.text = "Country: \(building.description) | Date Built: \(building.dateBuilt)"
-        cell.descriptionLabel?.text = building.description
+        
+        //For attributed texts...Highlight the separator for two fields by red colour.
+        let strCountry: NSString = "Country: \(building.country) | Date Built: \(building.dateBuilt)" as NSString
+        let range = (strCountry).range(of: "|")
+         let attribute = NSMutableAttributedString.init(string: strCountry as String)
+        attribute.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red , range: range)
+        
+        cell.country_datebuilt_Label?.attributedText = attribute
+        
+        //For attributed text....Highlight the Cost label by bold font
+        let strCost: NSString = "Cost: \(building.cost)" as NSString // you must set your
+        let range3 = (strCost).range(of: "Cost:")
+        let attributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.black,
+            .backgroundColor: UIColor.white,
+            .font: UIFont.boldSystemFont(ofSize: 14)
+        ]
+        
+        let attributedString = NSAttributedString(string: strCost as String, attributes: attributes)
+        cell.descriptionLabel?.attributedText = attributedString
+        
 
         
             let url = URL(string: building.imageURL)!
