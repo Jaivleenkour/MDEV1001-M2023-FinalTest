@@ -274,7 +274,7 @@
                                 <rect key="frame" x="20" y="124" width="390" height="778"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuildingCell" rowHeight="120" id="UGo-XJ-K6I" customClass="MovieTableViewCell" customModule="MDEV1001_M2023_Assignment4" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuildingCell" rowHeight="120" id="UGo-XJ-K6I" customClass="MovieTableViewCell" customModule="MDEV1001_M2023_FinalTest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UGo-XJ-K6I" id="rDo-yR-KOF">
@@ -474,7 +474,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Z0-ry-Ide" userLabel="DescriptionTextView">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write Description here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Z0-ry-Ide" userLabel="DescriptionTextView">
                                 <rect key="frame" x="20" y="473.66666666666669" width="390" height="60.000000000000057"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
